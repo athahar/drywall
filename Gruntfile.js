@@ -7,36 +7,36 @@ module.exports = function(grunt) {
       vendor: {
         files: [
           {
-            expand: true, cwd: 'bower_components/bootstrap/',
-            src: ['js/**', 'less/**'], dest: 'public/vendor/bootstrap/'
+            expand: true, cwd: 'components/bootstrap/',
+            src: ['js/**', 'less/**'], dest: 'public/components/bootstrap/'
           },
           {
-            expand: true, cwd: 'bower_components/backbone/',
-            src: ['backbone.js'], dest: 'public/vendor/backbone/'
+            expand: true, cwd: 'components/backbone/',
+            src: ['backbone.js'], dest: 'public/components/backbone/'
           },
           {
-            expand: true, cwd: 'bower_components/font-awesome/',
-            src: ['fonts/**', 'less/**'], dest: 'public/vendor/font-awesome/'
+            expand: true, cwd: 'components/font-awesome/',
+            src: ['fonts/**', 'less/**'], dest: 'public/components/font-awesome/'
           },
           {
-            expand: true, cwd: 'bower_components/html5shiv/dist/',
-            src: ['html5shiv.js'], dest: 'public/vendor/html5shiv/'
+            expand: true, cwd: 'components/html5shiv/dist/',
+            src: ['html5shiv.js'], dest: 'public/components/html5shiv/'
           },
           {
-            expand: true, cwd: 'bower_components/jquery/dist/',
-            src: ['jquery.js'], dest: 'public/vendor/jquery/'
+            expand: true, cwd: 'components/jquery/dist/',
+            src: ['jquery.js'], dest: 'public/components/jquery/'
           },
           {
-            expand: true, cwd: 'bower_components/momentjs/',
-            src: ['moment.js'], dest: 'public/vendor/momentjs/'
+            expand: true, cwd: 'components/momentjs/',
+            src: ['moment.js'], dest: 'public/components/momentjs/'
           },
           {
-            expand: true, cwd: 'bower_components/respond/src/',
-            src: ['respond.js'], dest: 'public/vendor/respond/'
+            expand: true, cwd: 'components/respond/src/',
+            src: ['respond.js'], dest: 'public/components/respond/'
           },
           {
-            expand: true, cwd: 'bower_components/underscore/',
-            src: ['underscore.js'], dest: 'public/vendor/underscore/'
+            expand: true, cwd: 'components/underscore/',
+            src: ['underscore.js'], dest: 'public/components/underscore/'
           }
         ]
       }
@@ -92,27 +92,27 @@ module.exports = function(grunt) {
       layouts: {
         files: {
           'public/layouts/core.min.js': [
-            'public/vendor/jquery/jquery.js',
-            'public/vendor/underscore/underscore.js',
-            'public/vendor/backbone/backbone.js',
-            'public/vendor/bootstrap/js/affix.js',
-            'public/vendor/bootstrap/js/alert.js',
-            'public/vendor/bootstrap/js/button.js',
-            'public/vendor/bootstrap/js/carousel.js',
-            'public/vendor/bootstrap/js/collapse.js',
-            'public/vendor/bootstrap/js/dropdown.js',
-            'public/vendor/bootstrap/js/modal.js',
-            'public/vendor/bootstrap/js/tooltip.js',
-            'public/vendor/bootstrap/js/popover.js',
-            'public/vendor/bootstrap/js/scrollspy.js',
-            'public/vendor/bootstrap/js/tab.js',
-            'public/vendor/bootstrap/js/transition.js',
-            'public/vendor/momentjs/moment.js',
+            'public/components/jquery/dist/jquery.js',
+            'public/components/underscore/underscore.js',
+            'public/components/backbone/backbone.js',
+            'public/components/bootstrap/js/affix.js',
+            'public/components/bootstrap/js/alert.js',
+            'public/components/bootstrap/js/button.js',
+            'public/components/bootstrap/js/carousel.js',
+            'public/components/bootstrap/js/collapse.js',
+            'public/components/bootstrap/js/dropdown.js',
+            'public/components/bootstrap/js/modal.js',
+            'public/components/bootstrap/js/tooltip.js',
+            'public/components/bootstrap/js/popover.js',
+            'public/components/bootstrap/js/scrollspy.js',
+            'public/components/bootstrap/js/tab.js',
+            'public/components/bootstrap/js/transition.js',
+            'public/components/momentjs/moment.js',
             'public/layouts/core.js'
           ],
           'public/layouts/ie-sucks.min.js': [
-            'public/vendor/html5shiv/html5shiv.js',
-            'public/vendor/respond/respond.js',
+            'public/components/html5shiv/html5shiv.js',
+            'public/components/respond/respond.js',
             'public/layouts/ie-sucks.js'
           ],
           'public/layouts/admin.min.js': ['public/layouts/admin.js']
@@ -192,7 +192,7 @@ module.exports = function(grunt) {
         ]
       },
       vendor: {
-        src: ['public/vendor/**']
+        src: ['public/components/**']
       }
     }
   });
